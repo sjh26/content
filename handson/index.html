@@ -29,6 +29,11 @@ Title Slide
   <p>Replicate what you see in the movies on your computer.</p>
   <p>The movies will loop so you can see all the steps.</p>
 
+  <p>  </p>
+
+  <h3><em>Hina Shah, Sam Horvath</em></h3>
+  <a href='http://www.kitware.com'>Kitware, Inc.</a>
+  <p>modified from material generously provided by</p>
   <h3><em>Steve Pieper, PhD</em></h3>
   <a href='http://isomics.com'>Isomics, Inc.</a>
 
@@ -41,10 +46,9 @@ Title Slide
       <li><a href='#/Prerequisites'>Prerequisites</a> </li>
       <li><a href='#/SampleData'>Looking at Sample Data volumes</a> </li>
       <li><a href='#/ThreeDView'>Working in 3D</a> </li>
-      <li><a href='#/Editor'>Interactive Segmentation</a> </li>
-      <li><a href='#/LabelStatistics'>Obtaining quantitative data</a> </li>
+      <li><a href='#/Surface'>Surface Visualization</a> </li>
       <li><a href='#/python'>Using python on pixel data</a></li>
-      <li><a href='#/DICOM'>Working with DICOM</a></li>
+      <li><a href='#/pythonModule'>Creating custom python modules</a> </li>
       <li><a href='#/extensions'>Using the Extension Manager</a></li>
   </ul>
 
@@ -64,9 +68,7 @@ Prereqs
       <li>The examples are made with 3D Slicer version 4.6.2 released in November of 2016</li>
       <li> These examples should work on most Windows, MacOS, and Linux machines.</li>
       <li> <em>Note that only 64 bit operating systems are supported</em></li>
-      <li> 
-      For the DICOM example <a href="https://drive.google.com/file/d/0Bygzw56l1ZC-UVJjU1I0MzZUMXc/view?usp=sharing">download the data here</a>
-      </li>
+      
     </ul>
   <p/>
   <p/>
@@ -136,74 +138,20 @@ More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Modules/V
 </section>
 
 <!--
-Using the Editor to segment a structure
+Surface rendering and visualization
 -->
-<section id='Editor'>
+<section id='Surface'>
 
   <section>
-    <img data-src="./gifs/Editor.gif"/>
-    <p>Task: Perform a simple interactive segmentation</p>
+    <img data-src="./gifs/ThreeDView.gif"/>
+    <p>Task: explore 3D visualizations in slicer</p>
   </section>
 
   <section>
 
     <ul>
       <li>
-More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Modules/Editor'>the Editor documentation</a>.
-      </li>
-      <li>
-Slicer now includes a more powerful interactive system called the <a href='https://www.slicer.org/wiki/Documentation/Nightly/Modules/SegmentEditor'>the Segment Editor</a>.  To use this please get the Nightly build of Slicer.
-      </li>
-  </ul>
-
-  </section>
-
-</section>
-
-<!--
-Generating label statistics table and plot
--->
-<section id='LabelStatistics'>
-
-  <section>
-    <img data-src="./gifs/LabelStatistics.gif"/>
-    <p>Task: Generate a plot of image statistics within segmented regions</p>
-  </section>
-
-  <section>
-
-    <ul>
-      <li>
-More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Modules/LabelStatistics'>the LabelStatistics documentation</a>.
-      </li>
-      <li>
-        If you use the new Segment Editor you can export the Segmentation to a Label Map and still calculate the Label Statistics.
-      </li>
-  </ul>
-
-  </section>
-
-</section>
-
-
-<!--
-Loading DICOM Data
--->
-<section id="DICOM">
-
-  <section>
-    <img data-src="./gifs/DICOM.gif"/>
-    <p>Task: Import DICOM data, review context, look at metadata, load</p>
-  </section>
-
-  <section>
-
-    <ul>
-      <li>
-    Slicer includes an internal sqlite database to organize dicom files
-      </li>
-      <li>
-More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Modules/DICOM'>the DICOM documentation</a>.
+More details at <a href='https://www.slicer.org/w/images/a/ae/Slicer4minute-tutorial_SoniaPujol-mj.pdf'>the Slicer 4 Minute Tutorial</a>.
       </li>
   </ul>
 
@@ -234,6 +182,31 @@ Working with the Python console
       <li>
         Many custom extensions to Slicer can be implemented in pure python, no compiler needed!
       </li>
+      <li>
+More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Developers/Python_scripting'>the python scripting section of the Slicer developer documentation.</a>.
+      </li>
+  </ul>
+
+  </section>
+
+</section>
+
+<!--
+Custom python module
+-->
+
+
+<section id="pythonModule">
+
+  <section>
+    <img data-src="./gifs/python.gif"/>
+    <p>Task: use a custom python module to filter images</p>
+  </section>
+
+  <section>
+
+    <ul>
+      <li>This tutorial is also covered <a href='https://www.slicer.org/w/images/0/0f/Slicer4_ProgrammingTutorial_SPujol-SPieper.pdf'>here</a></li>
       <li>
 More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Developers/Python_scripting'>the python scripting section of the Slicer developer documentation.</a>.
       </li>
